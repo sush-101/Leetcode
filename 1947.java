@@ -41,7 +41,7 @@ class Solution {
             return 0;
         if(dp[rows][mask] != -1) return dp[rows][mask];
         int res = 0;
-        for(int i = 0 ; i < students.length ; i++){
+        for(int i = 0 ; i < mentors.length ; i++){
             if((mask & (1<<i)) == 0){
                 int score = 0;
                 for(int j = 0 ; j < students[0].length ; j++){
